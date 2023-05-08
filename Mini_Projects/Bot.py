@@ -6,7 +6,6 @@ voices = engine.getProperty('voices')
 print(voices[1].id)
 engine.setProperty('voice',voices[1].id)
 
-
 def speak(audio):
  engine.say(audio)
  engine.runAndWait()
@@ -24,11 +23,6 @@ def wishme():
 	elif hour>=19:
 		print(hour)
 		speak("Good evening sir!")
-
-
-
-
-
 
 if __name__ == "__main__":
   wishme()
