@@ -11,7 +11,6 @@ class Train:
 
     def BooK_ticket(self):
         if(self.seats > 0):
-           
            print("Your ticket is booked !!!!!")
            self.seats = self.seats - 1
         else:

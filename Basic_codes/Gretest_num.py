@@ -10,3 +10,4 @@ n1=int(input("Enter the number1:"))
 n2=int(input("Enter the number2:"))
 n3=int(input("Enter the number3:"))
 greatestnum(n1,n2,n3)
+

@@ -9,7 +9,6 @@ class Account:
         self.bal = self.bal-amt
         return f"The amount {amt} is deposited form your account: {self.bal}"
     
-    
 
 if __name__=="__main__":
  act = Account("Sushant",2213324,200000)
