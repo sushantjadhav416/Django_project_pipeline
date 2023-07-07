@@ -1,0 +1,96 @@
+#courses {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color:black;
+}
+.light-theme{
+	color: #f1e8e8;
+  background: #09196c;
+}
+ .btn {
+	position: absolute;
+	top: 20px;
+	left: 250px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: none;
+	color: var(--btnFontColor);
+	background-color: black;
+  }  
+.dark-theme {
+	color: #f1e8e8;
+    background: #090a0f;
+  }
+#courseIntro{
+	display: grid;
+	grid-template-columns: 1fr,1fr;
+	grid-template-rows:20px,2px ;
+	padding: 15px;
+}
+.standoutLabel {
+     color:rgba(220, 220, 220, 0.692);
+	display:inline-block;
+}
+input[type=text] {
+	margin-top: 10px;
+	text-transform: any;	
+}
+#favorites{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70px 70px;
+	margin-top:20px;
+	border-style:solid;
+	border-width:1px;
+	padding:5px;
+	
+}
+#likes{
+	/* border-style:solid; */
+	background-color:rgb(25, 24, 24);
+	border-width:1px;
+	width:120px;
+	height:40px;
+}
+.green_btn{
+	display:inline-block;
+	padding:5px;
+	margin-top:20px;
+	border-radius:2em;
+	font-weight:bolder;
+	color:rgb(132, 19, 19);
+	background-color: red;
+	text-align:center;
+	width:100px;
+	letter-spacing: 4px;
+}
+body{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	animation-name: demo;
+	animation-duration: 6s ;
+}
+@keyframes demo {
+	from{
+		height: 50px;
+	}
+	to{
+		height: 80px;
+	}
+	from{
+		background-color: #cccc00;
+	}
+	0%{
+        transform: rotate(50deg);
+	}
+	45%{
+		background-attachment: olive;
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+h2{
+	
+	font-family: Bold;
+}

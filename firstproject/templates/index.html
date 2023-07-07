@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HCT tech</title>
+		<div id="Datetoday">Today:</div>
+		<link rel="stylesheet" href="static/styles.css">
+		<script src="static/scripts.js"></script>
+		<script src="timeScript.js"></script>
+		<script src="Darkmode.js"></script>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+	</head>
+	<body class="light-theme" onload="showDate()">
+		<h2>Hello from <acronym title="Hindustan computers limited">HCL</acronym></h2>
+		<p>Tell us about <span>your</span> course of interest</p>
+		<div>
+			<button class="btn">Dark</button>
+		</div>
+		<div id="courseIntro">
+		<div> Here are our courses:</div>
+		</div>
+		<div>
+			<script> 
+				for(x=0;x<coursesArray.length;x++){
+                   document.writeln(x+1," "+coursesArray[x]);
+                }
+                document.write("<p></p>");
+			</script>
+		</div>
+		<form name="feedback">
+			<div>
+				<label>Choose a course:</label>	
+			</div>			
+			<div>
+				<select id="courses" multiple size="3" onchange="ChioceMade(this.value);">
+					<option value="" selected>--Choose--</option>
+					<option value="angular">Angular</option>
+					<option value="reactjs">React</option>
+					<option value="vuejs">Vue</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="Python">Python</option>
+					<option value="Python"><script>coursesArray[1]</script></option>
+				</select>
+			</div>
+			<div>
+				<div id="courseInfo"></div>
+			</div>
+			
+			<div id="favorites">
+				<div>
+					<label class="standoutLabel">Favorite Instructor:</label>	
+					<input type="text" id="instructorName" required minlength="4">
+				</div>
+				<div>
+					<label class="standoutLabel">Favorite course:</label>	
+					<input type="text" id="courses" required maxlength="12" pattern="[A-Za-z]{1,}[+]{0,2}">
+				</div>	
+				<div>
+					<label>Did you like the course</label>
+				</div>
+				<div id="likes">
+					<input type="radio" name="like">Yes
+					<input type="radio" name="like">No
+				</div>
+                <div>
+					<label>Upcoming courses</label>
+				</div>
+				<div id="futureCourses">
+					
+				</div>
+			</div>
+
+			<div>
+				<button class="green_btn" onclick="validation()">Send</button>
+			</div>
+		</form>		
+		
+	</body>
+</html>
