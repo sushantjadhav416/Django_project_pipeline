@@ -23,9 +23,12 @@ admin.site.site_title = " skillsoft Admin Portal"
 admin.site.index_title = "Welcome to  Skillsoft searcher Portal"
 
 urlpatterns = [
-    
-    path('',views.index,name='index'),
-    path('about',views.about,name='about'),
-    path('Home',views.Home,name="Home"),
-    path('Contact',views.contact,name="Contact")
+    path('',views.Home,name='Home'),
+    path('home',views.Home,name='Home'),
+    path('signup',views.signup,name='signup'),
+    path('login',views.login,name='login'),
+    path('fashion',views.fashion,name='fashion'),
+    path('Contact',views.contact,name="Contact"),
+    path('electronics',views.electronics,name='electronics')
+
 ]
