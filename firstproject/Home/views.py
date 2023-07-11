@@ -9,7 +9,10 @@ def Home(request):
     return render(request,'Home.html')
 
 def fashion(request):
-    return render(request,'fashion')
+    return render(request,'fashion.html')
+
+def grocery(request):
+    return render(request,'grocery.html')
 
 def contact(request):
     if request.method == "POST":
