@@ -4,6 +4,7 @@ metadata:
   name: django-web-app
   labels:
     app: django-web-app
+spec:
   replicas: 2
   selector:
     matchLabels:
