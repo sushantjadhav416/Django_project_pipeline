@@ -18,4 +18,4 @@ spec:
       - name: django-web-app
         image: sushantjadhavhcl/django-web-app:v1
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
