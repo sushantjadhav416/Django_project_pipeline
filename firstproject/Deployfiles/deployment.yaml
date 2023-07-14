@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: django-web-app
-        image: sushantjadhavhcl/django-web-app:replaceImageTag
+        image: sushantjadhavhcl/django-web-app:1
         ports:
         - containerPort: 8000
