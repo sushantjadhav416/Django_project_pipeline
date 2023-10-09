@@ -31,6 +31,7 @@ Execute the application locally and access it using your browser
 Checkout the repo and move to the directory
 
 git clone https://github.com/sushantjadhav416/Django_project_pipline/firstproject
+
 cd Django_project_pipline/firstproject
 Execute the Docker build command to build docker image.
 The Docker way
