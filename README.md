@@ -36,14 +36,14 @@ git clone https://github.com/sushantjadhav416/Django_project_pipline/firstprojec
    Execute the Docker build command to build docker image.
 
    
-# The Docker way
+### The Docker way
 Build the Docker Image
 
 docker build -t ultimate-cicd-pipeline:v1 .
 docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1
 Access the application on http://<ip-address>:8010
 
-# Next Steps
+### Next Steps
 Configure a Sonar Server locally
 apt install unzip
 adduser sonarqube
