@@ -22,7 +22,7 @@ $ python manage.py runserver Once the server is hosted, head over to http://127.
 
 Cheers and Happy Coding :)
 
-##Django based python web application
+##  Django based python web application
 This is a simple Django based python web application that can be containerize using Docker. Django dependencies are handled using the setup.py at the root directory of the repository.
 
 This is a MVT architecture based application where View returns a page with title and message attributes to the view.
@@ -30,7 +30,7 @@ This is a MVT architecture based application where View returns a page with titl
 Execute the application locally and access it using your browser
 Checkout the repo and move to the directory
 
-git clone https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/java-maven-sonar-argocd-helm-k8s/sprint-boot-app
+git clone https://github.com/sushantjadhav416/Django_project_pipline/firstproject
 cd Django_project_pipline/firstproject
 Execute the Docker build command to build docker image.
 The Docker way
