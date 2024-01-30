@@ -1,8 +1,8 @@
 ## Django_project_pipeline
 
-#django base E-commerce web application CI-CD deployment pipline A E-commerce web application built with django
+###  django base E-commerce web application CI-CD deployment pipline A E-commerce web application built with django
 
-E-commerce app
+- E-commerce app
 
 Setup To get this repository, run the following command inside your git enabled terminal
 
