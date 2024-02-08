@@ -64,13 +64,13 @@ Execute the Docker build command to build docker image.
 
    CMD [ "python3","manage.py","runserver","0.0.0.0:8000
    
-3. docker build -t ultimate-cicd-pipeline:v1 .
+3. docker build -t <Name Of Image>:v1 .
 
 4. docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1
 
 5. Access the application on http://<ip-address>:8010
 
-### Next Steps
+### configuring sonarqube for code quality anaylsis
 - Configure a Sonar Server locally  
 
 1. apt install unzip  
