@@ -47,14 +47,29 @@ Checkout the repo and move to the directory
 Execute the Docker build command to build docker image.
 
    
-### The Docker way
-1. Build the Docker Image
+### The Dockerization
 
-2. docker build -t ultimate-cicd-pipeline:v1 .
+1. To Build the Docker Image we have to code a Dockerfile according to our project need.
+   for this project , i have coded dockerFile as below,
+   
+   FROM python:3.10-slim
 
-3. docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1
+   ENV PYTHONUNBUFFERED 1
 
-4. Access the application on http://<ip-address>:8010
+   WORKDIR /app
+
+   COPY . /app
+
+   RUN pip install -r requirements.txt 
+
+   CMD [ "python3","manage.py","runserver","0.0.0.0:8000"]
+   
+
+3. docker build -t ultimate-cicd-pipeline:v1 .
+
+4. docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1
+
+5. Access the application on http://<ip-address>:8010
 
 ### Next Steps
 - Configure a Sonar Server locally  
