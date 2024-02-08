@@ -49,11 +49,10 @@ Execute the Docker build command to build docker image.
    
 ### The Dockerization
 
-1. To Build the Docker Image we have to code a Dockerfile according to our project need.
-   for this project , i have coded dockerFile as below,
-   
-   '''
-    FROM python:3.10-slim
+ 1. To Build the Docker Image we have to code a Dockerfile according to our project need.
+    for this project , i have coded dockerFile as below,
+
+   FROM python:3.10-slim
 
    ENV PYTHONUNBUFFERED 1
 
@@ -65,9 +64,6 @@ Execute the Docker build command to build docker image.
 
    CMD [ "python3","manage.py","runserver","0.0.0.0:8000
    
-   '''
-   
-
 3. docker build -t ultimate-cicd-pipeline:v1 .
 
 4. docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1
