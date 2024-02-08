@@ -52,7 +52,8 @@ Execute the Docker build command to build docker image.
 1. To Build the Docker Image we have to code a Dockerfile according to our project need.
    for this project , i have coded dockerFile as below,
    
-   '' FROM python:3.10-slim
+   '''
+    FROM python:3.10-slim
 
    ENV PYTHONUNBUFFERED 1
 
@@ -62,7 +63,9 @@ Execute the Docker build command to build docker image.
 
    RUN pip install -r requirements.txt 
 
-   CMD [ "python3","manage.py","runserver","0.0.0.0:8000"] ''
+   CMD [ "python3","manage.py","runserver","0.0.0.0:8000
+   
+   '''
    
 
 3. docker build -t ultimate-cicd-pipeline:v1 .
