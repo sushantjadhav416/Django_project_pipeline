@@ -2,7 +2,7 @@
 
 ### Django based E-commerce web application with CI-CD Jenkins pipline and Github actions CI-CD workflow.
 
-### E-commerce app
+### SetUp:
 
 - Setup To get this repository, run the following command inside your git enabled terminal
 
