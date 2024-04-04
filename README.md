@@ -69,7 +69,7 @@ Execute the Docker build command to build docker image.
 
 4. docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1
 
-5. Access the application on http://<ip-address>:5000
+5. Access the application on http://ip-address:5000
 
 
 
