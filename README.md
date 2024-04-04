@@ -1,6 +1,6 @@
 ## Django_project_pipeline
 
-### Django based E-commerce web application with CI-CD Jenkins pipline and Github actions CI-CD workflow.
+### Django based E-commerce web application with CI-CD Jenkins pipline.
 
 ### SetUp:
 
