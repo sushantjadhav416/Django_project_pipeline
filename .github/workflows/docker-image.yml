@@ -26,7 +26,7 @@ jobs:
            git config user.name "sushantjadhav416"
            TAG_DATE=v
            TAG_DATE+=$(date +'%Y%m%d');
-           docker build -t sushantjadhavhcl/eshop_django_app:${TAG_DATE} ./E_shop/
+           docker build -t sushantjadhavhcl/eshop_django_app:${TAG_DATE} ./firstproject/
            docker push sushantjadhavhcl/eshop_django_app:${TAG_DATE}
            sed -i "s/v../${TAG_DATE}/g"  firstproject/Deployfiles/deployment.yaml
            git add -A
