@@ -31,4 +31,4 @@ jobs:
            sed -i "s/v../${TAG_DATE}/g"  Deployfiles/deployment.yaml
            git add -A
            git commit -m "Update deployment image to version ${TAG_DATE}"
-           git push https://${{ secrets.GI_TOKEN }}@github.com/Django_project_pipeline/ HEAD:master
+           git push https://${{ secrets.GI_TOKEN }}@github.com/sushantjadhav416/Django_project_pipeline/ HEAD:master
