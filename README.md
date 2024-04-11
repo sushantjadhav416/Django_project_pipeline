@@ -2,6 +2,9 @@
 
 ### Django based E-commerce web application with CI-CD Jenkins pipline.
 
+### Screenshot
+![Alt text](Project1_e-shop.png)
+
 ### SetUp:
 
 - Setup To get this repository, run the following command inside your git enabled terminal
