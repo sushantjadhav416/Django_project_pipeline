@@ -36,8 +36,6 @@ jobs:
 
      steps:
      - name: Run Tests
-       run: |
-        cd firstproject
-        python manage.py test
+       run:  python manage.py test
      
     
