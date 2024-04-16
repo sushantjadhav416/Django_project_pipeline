@@ -80,19 +80,25 @@ cd Django_project_pipline/firstproject
    CMD [ "python3","manage.py","runserver","0.0.0.0:8000]
 
 ```
-3. ```
+3. __
+   ```
       docker build -t <Name Of Image>:v1 .
    ```
 
-4.``` 
+5. __
+  ``` 
   docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1 
   ```
 
-5. Access the application on http://ip-address:5000.
+6. Access the application on http://ip-address:5000.
 
 
 
 # Github actions Workflow structure
+1. CodeQL / Analyze - Code vulnerability scan
+2. Django CI-test - Unit test
+3. Docker Image CI / build - Docker Image build and push
+4. trivy / Build - Trivy docker image vunerability scan
 
 
 
