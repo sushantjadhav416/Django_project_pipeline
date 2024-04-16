@@ -1,6 +1,6 @@
 ## Django_project_pipeline
 
-### Django based E-commerce web application with CI-CD Jenkins pipline..
+### Django based E-commerce web application with CI-CD Jenkins pipline. and Github Actions.
 
 ### Screenshot
 ![Alt text](Project1_e-shop.png)
@@ -43,7 +43,7 @@ That was pretty simple, right? Now let's make the App live. We just need to star
 
 Cheers and Happy Coding :)
 
-##  
+##  Web Application Overview
 This is a simple Django based web application that can be containerize using Docker. Django dependencies are handled using the setup.py at the root directory of the repository.
 
 This is a MVT architecture based application where View returns a page with title and message attributes to the view.
@@ -51,20 +51,19 @@ This is a MVT architecture based application where View returns a page with titl
 - Execute the application locally and access it using your browser
 Checkout the repo and move to the directory
 
-  ```
+-  ```
    git clone https://github.com/sushantjadhav416/Django_project_pipline/firstproject
  ```
-
  
-```
+- ```
 cd Django_project_pipline/firstproject
 ```
 
 - Execute the Docker build command to build docker image.
 
-   
-### The Dockerization
 
+   
+### Dockerization
  1. To Build the Docker Image we have to code a Dockerfile according to our project need.
     for this project , i have coded dockerFile as below,
 ```
@@ -89,7 +88,11 @@ cd Django_project_pipline/firstproject
   docker run -d -p 5000:5000 -t ultimate-cicd-pipeline:v1 
   ```
 
-5. Access the application on http://ip-address:5000
+5. Access the application on http://ip-address:5000.
+
+
+
+# Github actions Workflow structure
 
 
 
