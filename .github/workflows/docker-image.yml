@@ -28,7 +28,7 @@ jobs:
            TAG_DATE+=$(date +'%Y%m%d');
            docker build -t sushantjadhavhcl/eshop_django_app:${TAG_DATE} .
            docker push sushantjadhavhcl/eshop_django_app:${TAG_DATE}
-           sed -i "s/VR../${TAG_DATE}/g"  Deployfiles/deployment.yaml
+           sed -i "s/I../${TAG_DATE}/g"  Deployfiles/deployment.yaml
            git add -A
            git commit -m "Update deployment image to version ${TAG_DATE}"
            git push https://${{ secrets.GI_TOKEN }}@github.com/sushantjadhav416/Django_project_pipeline/ HEAD:master
