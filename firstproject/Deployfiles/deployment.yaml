@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: django-web-app
-        image: sushantjadhavhcl/eshop_django_app:I
+        image: sushantjadhavhcl/eshop_django_app:I I20240422
         ports:
         - containerPort: 8000
