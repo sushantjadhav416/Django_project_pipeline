@@ -24,11 +24,11 @@ jobs:
            cd firstproject
            git config user.email "sushantjadhav416@gmail.com"
            git config user.name "sushantjadhav416"
-           TAG_DATE=VR
+           TAG_DATE=I
            TAG_DATE+=$(date +'%Y%m%d');
            docker build -t sushantjadhavhcl/eshop_django_app:${TAG_DATE} .
            docker push sushantjadhavhcl/eshop_django_app:${TAG_DATE}
-           sed -i "s/I../${TAG_DATE}/g"  Deployfiles/deployment.yaml
+           sed -i "s/I.*/I ${TAG_DATE}/"  Deployfiles/deployment.yaml
            git add -A
            git commit -m "Update deployment image to version ${TAG_DATE}"
            git push https://${{ secrets.GI_TOKEN }}@github.com/sushantjadhav416/Django_project_pipeline/ HEAD:master
