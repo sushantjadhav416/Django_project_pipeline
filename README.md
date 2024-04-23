@@ -31,11 +31,11 @@ Now, to apply this migrations run the following command
   
    ```
 
-One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
+One last step and then our  App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
 
 - $ python manage.py createsuperuser 
 
-That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
+That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple App. Start the server by following command
 
 ```
  $ python manage.py runserver Once the server is hosted, head over to http://127.0.0.1:8000/E_shop for the App.
@@ -97,7 +97,7 @@ cd Django_project_pipline/firstproject
 # Github actions Workflow structure
 1. CodeQL / Analyze - Code vulnerability scan
 2. Django CI-test - Unit test
-3. Docker Image CI / build - Docker Image build and push
+3. Docker-Image-CI / Build  - Docker Image build and push and Update the Deployment.yaml files
 4. trivy / Build - Trivy docker image vunerability scan
 
 
