@@ -18,10 +18,8 @@ RUN apt-get update && \
 
 # Install OWASP Dependency-Check
 RUN apt-get update && \
-    apt-get install -y openjdk-11-jre && \
-    wget https://dl.bintray.com/jeremy-long/owasp/dependency-check-7.1.0-release.zip && \
-    unzip dependency-check-7.1.0-release.zip && \
-    rm dependency-check-7.1.0-release.zip
+    apt-get install -y zaproxy
+
 
 ENV PATH="/dependency-check/bin:${PATH}"
 
