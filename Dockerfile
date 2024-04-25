@@ -8,7 +8,7 @@ RUN apt-get update && \
     maven \
     git \
     wget \
-    unzip
+    unzip \
 
 # Install Trivy
 RUN wget [1](https://github.com/aquasecurity/trivy/releases/download/v0.20.0/trivy_0.20.0_Linux-64bit.deb) && \
