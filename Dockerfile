@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     maven\
     git \
     Trivy \
-    OWASP 
+    OWASP \
 
 # Add other tools here (e.g., Trivy, OWASP dependencies)
 
