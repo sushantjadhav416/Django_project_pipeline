@@ -4,9 +4,10 @@ FROM ubuntu:latest
 # Install required packages
 RUN apt-get update && apt-get install -y \
     docker.io \
+    maven\
     git \
     Trivy \
-    OWASP
+    OWASP 
 
 # Add other tools here (e.g., Trivy, OWASP dependencies)
 
