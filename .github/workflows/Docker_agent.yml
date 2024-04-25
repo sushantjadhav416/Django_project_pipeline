@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Agent
 
 on:
   push:
@@ -26,6 +26,6 @@ jobs:
            TAG_DATE=I
            TAG_DATE+=$(date +'%Y%m%d');
            UP_TAG=$(date +'%Y%m%d')
-           docker build -t sushantjadhavhcl/Doker:${TAG_DATE} .
-           docker push sushantjadhavhcl/eshop_django_app:${TAG_DATE}
+           docker build -t sushantjadhavhcl/docker_agent:${TAG_DATE} .
+           docker push sushantjadhavhcl/docker_agent:${TAG_DATE}
            
