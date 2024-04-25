@@ -21,7 +21,6 @@ jobs:
 
     - name: Build Docker Image and Updateting the deployment files
       run: |
-           cd firstproject
            git config user.email "sushantjadhav416@gmail.com"
            git config user.name "sushantjadhav416"
            TAG_DATE=I
