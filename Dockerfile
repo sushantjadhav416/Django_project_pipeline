@@ -1,30 +1,31 @@
-# Use a base image with Ubuntu
-FROM ubuntu:20.04
+FROM ubuntu:latest
 
-# Install required packages
+# Install Maven
 RUN apt-get update && \
-    apt-get install -y \
-    docker.io \
-    maven \
-    git \
-    wget \
-    unzip \
+    apt-get install -y maven
+
+# Install Docker
+RUN apt-get update && \
+    apt-get install -y docker.io
 
 # Install Trivy
-RUN wget [1](https://github.com/aquasecurity/trivy/releases/download/v0.20.0/trivy_0.20.0_Linux-64bit.deb) && \
-    dpkg -i trivy_0.20.0_Linux-64bit.deb && \
-    rm trivy_0.20.0_Linux-64bit.deb
+RUN apt-get update && \
+    apt-get install -y wget apt-transport-https gnupg lsb-release && \
+    wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | apt-key add - && \
+    echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | tee -a /etc/apt/sources.list.d/trivy.list && \
+    apt-get update && \
+    apt-get install -y trivy
 
 # Install OWASP Dependency-Check
-RUN wget [2](https://github.com/jeremylong/DependencyCheck/releases/download/v6.4.2/dependency-check-6.4.2-release.zip) && \
-    unzip dependency-check-6.4.2-release.zip && \
-    rm dependency-check-6.4.2-release.zip
+RUN apt-get update && \
+    apt-get install -y openjdk-11-jre && \
+    wget https://dl.bintray.com/jeremy-long/owasp/dependency-check-7.1.0-release.zip && \
+    unzip dependency-check-7.1.0-release.zip && \
+    rm dependency-check-7.1.0-release.zip
 
-# Set environment variables
 ENV PATH="/dependency-check/bin:${PATH}"
 
-# Set working directory
-WORKDIR /app
+CMD ["bash"]
 
 # Copy your application code (if needed)
 # COPY . .
