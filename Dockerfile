@@ -16,12 +16,12 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y trivy
 
-# Install OWASP Dependency-Check
-RUN apt-get update && \
-    apt-get install -y zaproxy
+# # Install OWASP Dependency-Check
+# RUN apt-get update && \
+#     apt-get install -y zaproxy
 
 
-ENV PATH="/dependency-check/bin:${PATH}"
+# ENV PATH="/dependency-check/bin:${PATH}"
 
 CMD ["bash"]
 
